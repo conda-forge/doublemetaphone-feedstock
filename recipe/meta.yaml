@@ -34,7 +34,7 @@ test:
 
 about:
   license: MIT
-  # license_file: LICENSE # When added to MANIFEST.in – https://github.com/datamade/doublemetaphone/issues/1
+  license_file: LICENSE
   summary: 'Python wrapper for C++ Double Metaphone'
   home: https://github.com/datamade/doublemetaphone
   dev_url: https://github.com/datamade/doublemetaphone
