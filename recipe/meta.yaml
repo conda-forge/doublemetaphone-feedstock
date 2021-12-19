@@ -1,6 +1,6 @@
 {% set name = "DoubleMetaphone" %}
-{% set version = "0.1" %}
-{% set md5 = "86e5ae4a4839321f60b9801837eb01c1" %}
+{% set version = "1.1" %}
+{% set md5 = "eb6a3f05f3254db7268d462cd0a3ff49" %}
 
 package:
   name: {{ name|lower }}
@@ -12,9 +12,9 @@ source:
   md5: {{ md5 }}
 
 build:
-  number: 1004
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
-  skip: True  # [win and py3k]
+  skip: true  # [win and py3k]
 
 requirements:
   build:
@@ -35,7 +35,7 @@ test:
 about:
   license: MIT
   license_file: LICENSE
-  summary: 'Python wrapper for C++ Double Metaphone'
+  summary: Python wrapper for C++ Double Metaphone
   home: https://github.com/datamade/doublemetaphone
   dev_url: https://github.com/datamade/doublemetaphone
 
