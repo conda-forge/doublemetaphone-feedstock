@@ -12,13 +12,14 @@ source:
   md5: {{ md5 }}
 
 build:
-  number: 3
+  number: 4
   script: python setup.py install --single-version-externally-managed --record record.txt
   skip: true  # [win and py3k]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
